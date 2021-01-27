@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web Visualization </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/latitude_analysis_style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#latitudeNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span> 
+            </button>
+        <a style="color: white;" class="navbar-brand" href="latitude_analysis.html">Latitude</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="latitudeNavbar">
+        <ul class="nav navbar-nav navbar-right" >
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plot<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="maxtemperature.html">Max Temperature</a></li>
+              <li><a href="humidity.html">Humidity</a></li>
+              <li><a href="cloudiness.html">Cloudiness</a></li>
+              <li><a href="windspeed.html">Wind Speed</a></li>
+            </ul>
+          </li>
+          <li><a href="comparison.html">Comparison</a></li>
+          <li><a href="data.html">Data</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  <div class="container">
+
+    <h1>Comparison: Latitude vs X</h1><hr>
+    <p style="margin-bottom: 20px">Click any plot to get an in-depth analysis</p>
+    <div class="row">
+        <div class="col-md-6 col-centered">
+          <div class="img-container">
+            <h3 align="center">vs. Max Temperature</h3>
+            <a href="maxtemperature.html" target="_self">
+              <img style="margin-bottom: 20px" src="images/latitude_analysis/CityLatitudeVsMaxTemperature.png"
+                class="img-fluid img-thumbnail" alt="City Latitude vs. Temperature Plot">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-centered">
+          <div class="img-container">
+            <h3 align="center">vs. Cloudiness</h3>
+            <a href="cloudiness.html" target="_self">
+              <img style="margin-bottom: 20px" src="images/latitude_analysis/CityLatitudeVsCloudiness.png" class="img-fluid img-thumbnail"
+                alt="Latitude vs. Cloudiness Plot">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-centered">
+          <div class="img-container">
+            <h3 align="center">vs. Humidity</h3>
+            <a href="humidity.html" target="_self">
+              <img style="margin-bottom: 20px" src="images/latitude_analysis/CityLatitudeVsHumidity.png" class="img-fluid img-thumbnail"
+                alt="Latitude vs. Humidity Plot">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-centered">
+          <div class="img-container">
+            <h3 align="center">vs. Wind Speed</h3>
+            <a href="windspeed.html" target="_self">
+              <img style="margin-bottom: 20px" src="images/latitude_analysis/CityLatitudeVsWindSpeed.png" class="img-fluid img-thumbnail"
+                alt="Latitude vs. Wind Speed Plot">
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+ </body>
+
+</html>
